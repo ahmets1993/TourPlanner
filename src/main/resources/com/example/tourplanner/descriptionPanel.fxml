@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="870.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourplanner.View.DescriptionPanelController">
+   <children>
+      <AnchorPane fx:id="pane1" layoutX="144.0" layoutY="62.0" prefHeight="506.0" prefWidth="900.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ImageView fitHeight="506.0" fitWidth="952.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Images/1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="154.0" layoutY="72.0" prefHeight="506.0" prefWidth="900.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ImageView fitHeight="506.0" fitWidth="952.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Images/8.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" layoutX="164.0" layoutY="82.0" prefHeight="506.0" prefWidth="900.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ImageView fitHeight="506.0" fitWidth="952.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Images/9.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="41.0" layoutY="313.0" mnemonicParsing="false" onAction="#onBackButtonClicked" text="&lt;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="250.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="1108.0" layoutY="301.0" mnemonicParsing="false" onAction="#onNextButtonClicked" text="&gt;" AnchorPane.bottomAnchor="350.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="250.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="titleTour" alignment="CENTER" layoutX="4.0" layoutY="14.0" prefHeight="35.0" prefWidth="1246.0" text="Welcome to Happy Wheels" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="624.0" text="Description">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTextArea" layoutX="199.0" layoutY="680.0" prefHeight="162.0" prefWidth="459.0" promptText="this test is example" text="&#10;             &quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae&#10;                                                              vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur&#10;                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam&#10;                       eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, &#10;                   nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo&#10;                                                                                                                                                     voluptas nulla pariatur?&quot;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextArea>
+   </children>
+</AnchorPane>

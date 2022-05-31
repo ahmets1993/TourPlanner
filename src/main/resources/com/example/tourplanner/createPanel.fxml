@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1070.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourplanner.View.CreatePanelController">
+    <children>
+        <Label fx:id="title" layoutX="-103.0" layoutY="7.0" prefHeight="70.0" prefWidth="960.0" text="                              CREATE YOUR JOURNEY" textAlignment="CENTER">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Label fx:id="country" layoutX="46.0" layoutY="384.0" text="COUNTRY" AnchorPane.bottomAnchor="543.0" AnchorPane.leftAnchor="42.0" />
+        <Label fx:id="startPoint" layoutX="46.0" layoutY="414.0" text="START POINT" AnchorPane.bottomAnchor="513.0" AnchorPane.leftAnchor="42.0" />
+        <Label fx:id="endPoint" layoutX="46.0" layoutY="444.0" text="END POINT" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="42.0" />
+        <Label fx:id="duration" layoutX="46.0" layoutY="534.0" text="DURATION" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="42.0" />
+        <Label fx:id="preise" layoutX="46.0" layoutY="564.0" text="PREIS" AnchorPane.bottomAnchor="363.0" AnchorPane.leftAnchor="42.0" />
+        <TextField fx:id="textFieldCountry" layoutX="186.0" layoutY="313.0" promptText="Austria" AnchorPane.bottomAnchor="541.0" />
+        <TextField fx:id="textFieldStartPoint" layoutX="186.0" layoutY="343.0" promptText="Vienna" AnchorPane.bottomAnchor="511.0" />
+        <TextField fx:id="textFieldEndPoint" layoutX="186.0" layoutY="373.0" promptText="Salzburg" AnchorPane.bottomAnchor="481.0" />
+        <Button fx:id="createButton" layoutX="42.0" layoutY="801.0" mnemonicParsing="false" onAction="#onCreateButtonClick" prefHeight="25.0" prefWidth="834.0" text="CREATE" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" />
+        <TextField fx:id="textFieldDate" layoutX="186.0" layoutY="403.0" promptText="YYYY-MM-DD" AnchorPane.bottomAnchor="451.0" />
+        <TextField fx:id="textFieldTime" layoutX="186.0" layoutY="433.0" promptText="19:00:00" AnchorPane.bottomAnchor="421.0" />
+        <Label fx:id="preise1" layoutX="46.0" layoutY="474.0" text="DATE" AnchorPane.bottomAnchor="453.0" AnchorPane.leftAnchor="42.0" />
+        <Label fx:id="preise2" layoutX="46.0" layoutY="504.0" text="TIME" AnchorPane.bottomAnchor="423.0" AnchorPane.leftAnchor="42.0" />
+        <ImageView fx:id="imageView2" fitHeight="479.0" fitWidth="569.0" layoutX="416.0" layoutY="109.0" onDragDetected="#onCheckButtonClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="85.0" />
+        <Button fx:id="checkButton" layoutX="38.0" layoutY="553.0" mnemonicParsing="false" onAction="#onCheckButtonClick" prefHeight="25.0" prefWidth="295.0" text="MAP CHECK" AnchorPane.bottomAnchor="291.0" AnchorPane.leftAnchor="38.0" />
+        <TextField fx:id="textFieldTourName" layoutX="186.0" layoutY="283.0" promptText="Mozart's Life" AnchorPane.bottomAnchor="571.0" />
+        <Label fx:id="tourName" layoutX="46.0" layoutY="354.0" text="TOUR NAME" AnchorPane.bottomAnchor="573.0" AnchorPane.leftAnchor="42.0" />
+      <Label fx:id="preise3" layoutX="46.0" layoutY="594.0" text="DISTANCE" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="42.0" />
+      <Label fx:id="duration_" layoutX="189.0" layoutY="534.0" text="-" AnchorPane.bottomAnchor="391.0" AnchorPane.leftAnchor="189.0" />
+      <Label fx:id="price_" layoutX="187.0" layoutY="564.0" text="-" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="189.0" />
+      <Label fx:id="distance_" layoutX="189.0" layoutY="594.0" text="-" AnchorPane.bottomAnchor="331.0" AnchorPane.leftAnchor="189.0" />
+      <TextField fx:id="textFieldTourDescription" layoutX="42.0" layoutY="637.0" prefHeight="140.0" prefWidth="820.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" />
+      <Label fx:id="preise31" layoutX="37.0" layoutY="595.0" text="Tour Description" AnchorPane.bottomAnchor="241.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="223.0" fitWidth="242.0" layoutX="36.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/fast-moving-tour-wagon-with-luggage-4349ld.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
